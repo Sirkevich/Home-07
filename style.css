@@ -20,7 +20,7 @@ body {
 }
 
 .promo__container {
-    max-width: 1140px;
+    max-width: 1210px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -35,8 +35,7 @@ body {
 }
 
 .nav {
-    display: inline-block;
-    margin-left: 500px;
+    float:right;
     vertical-align: top;
 }
 
@@ -110,7 +109,7 @@ body {
 }
 
 .services__wrapper {
-    max-width: 1140px;
+    max-width: 1210px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -120,31 +119,31 @@ body {
     margin-bottom: 70px;
 }
 
-.services__title {
+/* .services__title {
     margin-top: 0;
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 30px;
     line-height: 24px;
-}
+} */
 
-.divider {
+/* .divider {
     margin-top: 0;
     width: 50px;
     height: 2px;
     background-color: #555;
     border: none;
     margin-bottom: 28px;
-}
+} */
 
-.services__text {
+/* .services__text {
     display: inline-block;
     font-family: 'Roboto Slab', serif;
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
     max-width: 476px;
-}
+} */
 
 .services__advantages {
     font-size: 0px;
@@ -174,3 +173,76 @@ body {
     line-height: 24px;
     margin:0;
 }
+
+.title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 58px;
+    line-height: 24px;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color:#555;
+    border: none;
+    top: 54px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 476px;
+}
+
+.about-us__slider {
+    position: relative;
+    font-size: 0px;
+}
+
+.about-us__wrapper {
+    max-width: 1210px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.staff-item {
+    font-size: 14px;
+    display: inline-block;
+    height: auto;
+    margin-right: 30px;
+}
+
+.staff-item:last-child {
+    margin-right: 0;
+}
+
+.btn-slider {
+    position: relative;
+    width: 35px;
+    height: 38px;
+    background-color: #c0301c;
+} 
+
+.prev {
+    position: absolute;
+    left: -4px;
+    top: 106px;
+}   
+
+.next {
+    position: absolute;
+    top: 106px;
+    right: 26px;
+} 
