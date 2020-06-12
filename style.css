@@ -205,11 +205,6 @@ body {
     max-width: 476px;
 }
 
-.about-us__slider {
-    position: relative;
-    font-size: 0px;
-}
-
 .about-us__wrapper {
     max-width: 1210px;
     margin-right: auto;
@@ -217,14 +212,33 @@ body {
     text-align: center;
 }
 
-.staff-item {
+.col-count {
+    font-family: RobotoSlab;
+    /* font-size: 14px;*/
+    line-height: 24px; 
+    margin-top: 0;
+    margin-bottom: 70px;
+    text-align: left;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+
+.about-us__slider {
+    position: relative;
+    font-size: 0px;
+    border: 2px solid red;
+}
+
+.staff-card {
+    /* position: relative; */
     font-size: 14px;
     display: inline-block;
     height: auto;
     margin-right: 30px;
 }
 
-.staff-item:last-child {
+.staff-card:last-child{
     margin-right: 0;
 }
 
@@ -239,10 +253,51 @@ body {
     position: absolute;
     left: -4px;
     top: 106px;
+    background-image: url(img/btn-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }   
 
 .next {
     position: absolute;
     top: 106px;
     right: 26px;
+    background-image: url(img/btn-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
 } 
+
+.disable{
+    background-color: #d6d6d6;
+    border: none;
+}
+
+.staff-img-first {
+    background-image: url(img/head_of_ideas.jpg);
+}
+
+.staff-img-second {
+    background-image: url(img/lwp_developer.jpg);
+}
+
+.staff-img-third {
+    background-image: url(img/web_developer.jpg);
+}   
+
+.staff-img-fourth {
+    background-image: url(img/fe_developer.jpg);
+}
+
+.staff-bg {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.staff-card:last-child {
+    margin-right: 0;
+}
