@@ -6,6 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     background-color: #fff; 
+    padding-bottom: 100px;
 }
 
 .promo {
@@ -108,42 +109,21 @@ body {
     padding-bottom: 100px;
 }
 
-.services__wrapper {
-    max-width: 1210px;
+.wrapper {
+    max-width: 1140px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
 
-.services__about {
+.content-header{
     margin-bottom: 70px;
 }
 
-/* .services__title {
-    margin-top: 0;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    line-height: 24px;
-} */
-
-/* .divider {
-    margin-top: 0;
-    width: 50px;
-    height: 2px;
-    background-color: #555;
-    border: none;
-    margin-bottom: 28px;
-} */
-
-/* .services__text {
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 476px;
-} */
+.about-us {
+    color: #555;
+    font-size: 14px;
+}
 
 .services__advantages {
     font-size: 0px;
@@ -205,16 +185,8 @@ body {
     max-width: 476px;
 }
 
-.about-us__wrapper {
-    max-width: 1210px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-}
-
 .col-count {
-    font-family: RobotoSlab;
-    /* font-size: 14px;*/
+    font-family: 'Roboto Slab', serif;
     line-height: 24px; 
     margin-top: 0;
     margin-bottom: 70px;
@@ -223,15 +195,12 @@ body {
     column-gap: 30px;
 }
 
-
 .about-us__slider {
     position: relative;
     font-size: 0px;
-    border: 2px solid red;
 }
 
 .staff-card {
-    /* position: relative; */
     font-size: 14px;
     display: inline-block;
     height: auto;
@@ -243,25 +212,24 @@ body {
 }
 
 .btn-slider {
-    position: relative;
+    position: absolute;
     width: 35px;
     height: 38px;
     background-color: #c0301c;
 } 
 
 .prev {
-    position: absolute;
-    left: -4px;
+    left: -35px;
     top: 106px;
     background-image: url(img/btn-left.png);
     background-repeat: no-repeat;
     background-position: center;
+    border: none;
 }   
 
 .next {
-    position: absolute;
     top: 106px;
-    right: 26px;
+    right: -8px;
     background-image: url(img/btn-right.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -300,4 +268,35 @@ body {
 
 .staff-card:last-child {
     margin-right: 0;
+}
+
+.effect {
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(83, 82, 82, 0.5);
+    display:none;
+}
+  
+.staff-bg:hover .effect {
+    display: block;
+}
+
+.social {
+    font-size: 0;
+    position: relative;
+    top:197px;
+}
+
+.social-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.social-link:hover {
+    padding: 10px;
+    background-color: #c0301c;
 }
