@@ -1,12 +1,11 @@
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     background-color: #fff; 
-    padding-bottom: 100px;
 }
 
 .promo {
@@ -21,7 +20,7 @@ body {
 }
 
 .promo__container {
-    max-width: 1210px;
+    max-width: 1410px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -123,6 +122,7 @@ body {
 .about-us {
     color: #555;
     font-size: 14px;
+    padding-bottom: 100px;
 }
 
 .services__advantages {
@@ -137,7 +137,7 @@ body {
     margin-right: 30px;
 }
 
-.advantages-item:last-child{
+.advantages-item:last-child {
     margin-right: 0;
 }
 
@@ -196,19 +196,22 @@ body {
 }
 
 .about-us__slider {
+    /* margin-top: 0 auto; */
+    max-width: 1140px;
     position: relative;
     font-size: 0px;
 }
 
 .staff-card {
+    width: auto;
+    height: auto;
     font-size: 14px;
     display: inline-block;
-    height: auto;
     margin-right: 30px;
 }
 
-.staff-card:last-child{
-    margin-right: 0;
+.staff-card:nth-child(4) {
+    margin-right: 0px;
 }
 
 .btn-slider {
@@ -219,8 +222,9 @@ body {
 } 
 
 .prev {
-    left: -35px;
+    left:-25px;
     top: 106px;
+    padding: 0;
     background-image: url(img/btn-left.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -229,7 +233,8 @@ body {
 
 .next {
     top: 106px;
-    right: -8px;
+    right: -25px;
+    padding: 0;
     background-image: url(img/btn-right.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -254,6 +259,7 @@ body {
 }   
 
 .staff-img-fourth {
+    margin-right: 0;
     background-image: url(img/fe_developer.jpg);
 }
 
@@ -264,10 +270,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.staff-card:last-child {
-    margin-right: 0;
 }
 
 .effect {
